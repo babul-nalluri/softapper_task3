@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Expanded width */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: center; /* Center align input elements */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-task input[type="text"],
+.add-task input[type="number"],
+.add-task input[type="date"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+.filters {
+    margin-bottom: 10px;
+    text-align: right; /* Align filter dropdown to the right */
+}
+
+.filters label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.filters select {
+    padding: 8px;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Align task list items to the left */
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: #d9ead3;
+    text-decoration: line-through;
+}
+
+.details {
+    margin-left: auto; /* Push details to the right */
+}
+
+.actions {
+    display: flex;
+}
+
+.actions button {
+    margin-left: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions button.edit {
+    background-color: #2196F3;
+}
+
+.actions button.complete {
+    background-color: #4CAF50;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
